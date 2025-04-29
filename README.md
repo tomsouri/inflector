@@ -1,9 +1,25 @@
-# inflector
+# dp-sourada-dev
 Development repository for the master thesis of Tomáš Sourada at MFF CUNI.
 
-Before running any experiments, you need to:
-1) create venv and install dependencies: `python3 m venv .venv && .venv/bin/pip install --no-cache-dir -r requirements.txt`
-2) download and resplit data: `bash preprocess.sh` (for running this, you already need to have installed the venv in the path .venv)
+To prepare venv and data and run a toy training, run:
+`bash init.sh`
+
+This:
+1) creates the venv and installs dependencies, 
+2) downloads and re-splits the data, 
+3) prints the re-split statistics to a file `data-stats.<datetime>.txt` (this should be the same as the provided `stats.txt`)
+4) runs a toy example of monolingual and multilingual training on 2 languages
+
+For actually running some experiments, uncomment the appropriate lines in `example_run.sh` (bottom of the file) and run it (you need to have the venv and data prepared first).
+
+To inspect what is being done, look into `example_run.sh`. 
+
+
+git@github.com:tomsouri/dp-sourada-dev.git
+
+
+
+
 
 
 
@@ -13,5 +29,3 @@ Before running any experiments, you need to:
 - it will print comparison table on SIG22 DEV/TEST to results/sigmorphon/22/large-trainset-feats-overlap/comparison
 - hopefully, it will also print a nice comparison table for SIG23 both DEV/TEST comparing all the competing systems, and SIG22 table comparing all the competing systems
 - copy the results from metacentrum running `bash sync-res.sh`
-
-git@github.com:tomsouri/inflector.git
