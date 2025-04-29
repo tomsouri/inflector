@@ -1,5 +1,3 @@
-# git@github.com:tomsouri/inflector.git
-
 # inflector
 Development repository for the master thesis of Tomáš Sourada at MFF CUNI.
 
@@ -16,3 +14,5 @@ TO RUN EVALUATION (and comparison) on SIGMORPHON data:
 - it will print comparison table on SIG22 DEV/TEST to results/sigmorphon/22/large-trainset-feats-overlap/comparison
 - hopefully, it will also print a nice comparison table for SIG23 both DEV/TEST comparing all the competing systems, and SIG22 table comparing all the competing systems
 - copy the results from metacentrum running `bash sync-res.sh`
+
+git@github.com:tomsouri/inflector.git
